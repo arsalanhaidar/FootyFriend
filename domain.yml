@@ -1,0 +1,84 @@
+version: "3.1"
+
+intents:
+  - GetInfo
+
+
+entities:
+  - team
+  - lastOpponent
+  - lastScore
+  - leaguePosition
+  - manager
+  - nextGameDate
+  - nextOpponent
+  - numGamesPlayed
+  - playingNow
+  - winLossRecord
+
+
+slots:
+  team:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: team
+
+  lastOpponent:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: lastOpponent
+
+  lastScore:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: lastScore
+
+  leaguePosition:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: leaguePosition
+
+  manager:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: manager
+
+  nextGameDate:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: nextGameDate
+
+  nextOpponent:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: nextOpponent
+
+  numGamesPlayed:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: numGamesPlayed
+
+  playingNow:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: playingNow
+
+  winLossRecord:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: winLossRecord
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
