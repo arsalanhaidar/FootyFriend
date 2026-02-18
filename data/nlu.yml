@@ -1,91 +1,189 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: GetInfo
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - I need to know [the record](winLossRecord) of [Manchester City](team)
+    - How is [Bournemouth](team) [doing](winLossRecord)
+    - How many games has [Manchester United](team) [won](winLossRecord)
+    - How many games has [Arsenal](team) [lost](winLossRecord)
+    - Did [Brentford](team) [draw](winLossRecord) [yesterday](lastScore)
+    - Are [Liverpool](team) [doing well](winLossRecord)
+    - Are [Brighton and Hove Albion](team) [playing right now](playingNow)
+    - Is there a [game on](playingNow) right now?
+    - Who is [playing today](playingNow)
+    - Who did [Fulham](team) [play last](lastOpponent)
+    - I'm wondering in [West Ham United](team)'s last game [who did they play](lastOpponent)? What was the [final score](lastScore)?
+    - Which team did [Everton](team) [play](lastOpponent)
+    - Who did [Sunderland](team) [play against](lastOpponent)
+    - Who was [Sunderland](team)'s [previous competitor](lastOpponent)
+    - What [was the score](lastScore) in [Sunderland](team)'s last game
+    - How did [Everton](team) do in their [previous game](lastScore)
+    - Who won in [Arsenal](team)'s [last game](lastScore)?
+    - What was [the score](lastScore)
+    - Who is [Arsenal](team)'s [manager](manager)
+    - Who is [the manager](manager) for [Aston Villa](team)
+    - Who is the [current manager](manager) for [West Ham United](team)
+    - Who is [in charge](manager) for [Arsenal](team)
+    - Who [leads](manager) [Brighton and Hove Albion](team) 
+    - I'm looking for information about the soccer team called [Burnley](team)
+    - What do you know about [Chelsea](team)
+    - Tell me about [Everton](team)
+    - I don't really know much about [Crystal Palace](team)
+    - How many games has [West Ham United](team) [played so far](numGamesPlayed)
+    - What is [Burnley](team)'s [match count](numGamesPlayed)
+    - Who will [Burnley](team) [play against next match](nextOpponent)
+    - Who are [Brentford](team) [playing next](nextOpponent)? Let me rephrase that. Who are they playing now?
+    - Who's [up against](nextOpponent) [Tottenham Hotspur](team)
+    - What's [Manchester United](team)'s [next match](nextOpponent)
+    - What [place](leaguePosition) are [Crystal Palace](team) in
+    - Where is [Arsenal](team) on [the tables](leaguePosition)
+    - How is [Fulham](team) doing in [the league](leaguePosition)
+    - What [position](leaguePosition) is [Liverpool](team) in
+    - When are [Arsenal](team) [next playing](nextGameDate)
+    - Are [Everton](team) [playing tomorrow](nextGameDate)
+    - Is [Burnley](team) [still playing](nextGameDate) this season
+    - When is [Chelsea](team)'s [next game](nextGameDate)
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 
-- intent: affirm
+- lookup: team
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Arsenal
+    - Aston Villa
+    - Bournemouth
+    - Brentford
+    - Brighton and Hove Albion
+    - Burnley
+    - Chelsea
+    - Crystal Palace
+    - Everton
+    - Fulham
+    - Leeds United
+    - Liverpool
+    - Manchester City
+    - Manchester United
+    - Newcastle United
+    - Nottingham Forest
+    - Sunderland
+    - Tottenham Hotspur
+    - West Ham United
+    - Wolverhampton Wanderers
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
 
-- intent: mood_great
+- synonym: Arsenal
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - The Gunners
+    - Invincibles
+    - Woolwich
+    - Gooners
 
-- intent: mood_unhappy
+- synonym: Aston Villa
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - The Villans
+    - The Lions
+    - Villa
 
-- intent: bot_challenge
+- synonym: Bournemouth
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - The Cherries
+
+- synonym: Brentford
+  examples: |
+    - The Bees
+
+- synonym: Brighton and Hove Albion
+  examples: |
+    - The Seagulls
+    - Dolphins
+    - Albion
+    - Tesco
+    - Brighton
+    - Hove
+
+- synonym: Burnley
+  examples: |
+    - The Clarets
+    - Royalites
+    - Landi
+
+- synonym: Chelsea
+  examples: |
+    - The Blues
+    - Headhunters
+    - Chelski
+
+- synonym: Crystal Palace
+  examples: |
+    - The Eagles
+    - Palace
+
+- synonym: Everton
+  examples: |
+    - The Toffees
+    - Bitters
+
+- synonym: Fulham
+  examples: |
+    - Badgers
+
+- synonym: Leeds United
+  examples: |
+    - The Whites
+    - The Peacocks
+    - Owls
+    - Leeds
+
+- synonym: Liverpool
+  examples: |
+    - The Reds
+    - Kop
+    - Kopites
+    - Anfielders
+    - Merseysiders
+    - Mickeymousers
+    - Pool
+
+- synonym: Manchester City
+  examples: |
+    - Man City
+    - The Citizens
+    - The Sky Blues
+
+- synonym: Manchester United
+  examples: |
+    - Man United
+    - Man U
+    - The Red Devils
+
+- synonym: Newcastle United
+  examples: |
+    - The Magpies
+
+- synonym: Nottingham Forest
+  examples: |
+    - Forest
+
+- synonym: Sunderland
+  examples: |
+    - The Black Cats
+
+- synonym: Tottenham Hotspur
+  examples: |
+    - Tottenham
+    - Spurs
+    - The Lilywhites
+
+- synonym: West Ham United
+  examples: |
+    - West Ham
+    - The Hammers
+    - The Lions
+
+- synonym: Wolverhampton Wanderers
+  examples: |
+    - Wolves
+
+
+# synonyms taken from: 
+# > https://thevillagefootballer.wordpress.com/2021/02/23/the-a-to-z-of-football-club-nicknames-the-ls/
+# > https://www.888sport.com/blog/football-team-nicknames
