@@ -3,6 +3,9 @@ version: "3.1"
 intents:
   - GetInfo
   - greet
+  - goodbye
+  - sassy
+  - backtrack
 
 
 entities:
@@ -79,6 +82,56 @@ slots:
       - type: from_entity
         entity: winLossRecord
 
+
+responses: 
+  utter_greet:
+    - "Hey, there!"
+    - "Hello hello hello!"
+    - "Hi, what's up?"
+    - "Hello, how can I help today?"
+    - "What's up squirrel friend"
+    - "Howdy do!"
+  utter_goodbye:
+    - "See you later"
+    - "Catch you on the flip side!"
+    - "Goodbye"
+    - "See ya later alligator!"
+    - "See you soon"
+    - "(Baby) Bye Bye Bye"
+  utter_sassy:
+    - "Mind your business, diva"
+    - "Let's focus on the football, shall we"
+    - "OMG you're so obsessed with meeee"
+    - "Girl, this isn't about me now"
+    - "Let me stay mysterious!"
+  utter_missing_team:
+    - "I'm unsure which team you're asking about, can you clarify?"
+    - "I'm not a mindreader! Which team were you wanting to know about?"
+    - "Remind me again, which team were you asking about?"
+    - "I think I'm missing which team you were asking about, remind me again please!"
+  utter_missing_stat:
+    - "What specific statistic were you wanting to know about?"
+    - "I'm not sure which statistic you would like to know, remind me again please"
+    - "Remind me again, what would you like to know about this team?"
+    - "My memory's real bad! Remind me what statistics you would like to know again"
+  utter_team_not_found:
+    - "I don't know this team! Maybe try a different name for them?"
+    - "Wow, that's a new nickname! Can you ask about this team using a different name for them instead?"
+    - "Correct me if I'm wrong, but I don't have this ream in my database!"
+  utter_backtrack:
+    - "Sure thing! What do you want to know instead?"
+    - "That's all good! What would you like to know instead?"
+    - "Okayyy topic change I see you! So, what next?"
+    - "No prob bob! What would you like to know instead?"
+  utter_vague_question:
+    - "That question was a little too vague for me, can you clarify?"
+    - "League position? Last match? Previous Score? You need to specifiy more girl"
+    - "I'm not a magician, you'll need to be more specific with me"
+    - "Please can you specifiy exactly what you'd like to know?"
+
+
+actions:
+  - action_getInfo
 
 session_config:
   session_expiration_time: 60

@@ -2,12 +2,35 @@ version: "3.1"
 
 rules:
 
+- rule: Say hello anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Return football information anytime the user asks a football related question
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: GetInfo
+  - action: action_getInfo
+
+- rule: user changes topic
+  steps:
+  - intent: backtrack
+  - action: utter_backtrack
+
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_vague_question
+
+- rule: Give a sassy response anytime the user asks about the agent
+  steps: 
+  - intent: sassy
+  - action: utter_sassy
+
+
+

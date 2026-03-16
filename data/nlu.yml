@@ -45,13 +45,55 @@ nlu:
     - Is [Burnley](team) [still playing](nextGameDate) this season
     - When is [Chelsea](team)'s [next game](nextGameDate)
 
-- intent : greet
+- intent: greet
   examples: |
-    - "Hello!"
-    - "Hi"
-    - "Howdy"
-    - "Hey, what's up?"
+    - hello
+    - hi
+    - hey
+    - hey there
+    - hello there
+    - hi bot
+    - howdy
+    - what's up
+    - good morning
+    - good evening
+    - how are you
+    - how are you doin
 
+- intent: sassy
+  examples: |
+    - are you real
+    - are you a bot
+    - are you human
+    - what are you
+    - who made you
+    - who are you
+    - tell me about yourself
+    - what are you supposed to do
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see you
+    - catch you later
+    - thanks bye
+    - alright bye
+    - talk to you later
+    - i'm done
+
+- intent: backtrack
+  examples: |
+    - wait i changed my mind
+    - nevermind
+    - forget that
+    - can we switch topics
+    - wait i want to ask something else
+    - can i ask about something different
+    - actually something else
+    - let's talk about another team
+    
 
 - lookup: team
   examples: |
