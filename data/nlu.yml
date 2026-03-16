@@ -177,7 +177,6 @@ nlu:
   examples: |
     - West Ham
     - The Hammers
-    - The Lions
 
 - synonym: Wolverhampton Wanderers
   examples: |
