@@ -45,6 +45,13 @@ nlu:
     - Is [Burnley](team) [still playing](nextGameDate) this season
     - When is [Chelsea](team)'s [next game](nextGameDate)
 
+- intent : greet
+  examples: |
+    - "Hello!"
+    - "Hi"
+    - "Howdy"
+    - "Hey, what's up?"
+
 
 - lookup: team
   examples: |
