@@ -85,6 +85,60 @@ nlu:
     - what is their league position
     - how many games have they played
     - are they playing right now
+    - Give me [Arsenal](team)'s [latest results](lastScore)
+    - I want to know who [Liverpool](team) is [playing next](nextOpponent)
+    - Tell me [Chelsea](team)'s [manager](manager) name
+    - What [league position](leaguePosition) is [Manchester United](team) in right now
+    - How many matches has [Leeds United](team) [completed](numGamesPlayed)
+    - Did [Brighton](team) [win their last game](winLossRecord)
+    - When is [West Ham](team)'s [next match](nextGameDate)
+    - Who did [Fulham](team) [face in the previous game](lastOpponent)
+    - Give me [Burnley](team)'s [win/draw/loss record](winLossRecord)
+    - Which team is [Tottenham Hotspur](team) [playing today](playingNow)
+    - What was [Bournemouth](team)'s [score](lastScore) last time out
+    - Who manages [Crystal Palace](team) at the moment
+    - How many games has [Wolves](team) [played so far](numGamesPlayed)
+    - Is [Manchester City](team) [currently on the field](playingNow)
+    - Who will [Everton](team) [play in the next match](nextOpponent)
+    - Tell me [Sunderland](team)'s [last game opponent](lastOpponent)
+    - What's the [scoreline](lastScore) for [Brentford](team)'s most recent match
+    - How is [Arsenal](team) [performing this season](winLossRecord)
+    - Who leads [Liverpool](team) as [manager](manager)
+    - Show me [Chelsea](team)'s [next fixture](nextGameDate)
+    - I want to see [Manchester United](team)'s [current league standing](leaguePosition)
+    - How many matches has [West Ham United](team) [played](numGamesPlayed)
+    - Did [Brighton and Hove Albion](team) [draw or lose](winLossRecord) last time
+    - Which opponent did [Fulham](team) [face last](lastOpponent)
+    - What's [Bournemouth](team)'s [position](leaguePosition) on the table
+    - When is [Leeds United](team)'s [upcoming match](nextGameDate)
+    - Who is [Brentford](team) [playing against](nextOpponent)
+    - Give me [Tottenham Hotspur](team)'s [latest score](lastScore)
+    - How many games has [Manchester City](team) [won so far](winLossRecord)
+    - Is [Arsenal](team) [playing right now](playingNow)?
+    - Who managed [Liverpool](team) in the last match
+    - What's the [score](lastScore) from [Chelsea](team)'s previous game
+    - Show [Everton](team)'s [manager](manager)
+    - Which [team](team) is [Manchester United](team) facing next
+    - Give me [Sunderland](team)'s [last game result](lastScore)
+    - How is [Burnley](team) [doing in the league](leaguePosition)
+    - Who will [Crystal Palace](team) [play next](nextOpponent)
+    - How many matches has [Wolves](team) [finished](numGamesPlayed)
+    - Did [Tottenham](team) [win](winLossRecord) their last game
+    - Show me [Brighton](team)'s [manager](manager)
+    - What's the [score](lastScore) for [West Ham](team)'s most recent game
+    - When is [Manchester City](team)'s [next match](nextGameDate)
+    - Who did [Leeds United](team) [play](lastOpponent) last week
+    - Tell me [Arsenal](team)'s [win-loss stats](winLossRecord)
+    - How many games has [Chelsea](team) [drawn](winLossRecord)
+    - Is [Everton](team) [playing now](playingNow)?
+    - Who manages [Brentford](team) this season
+    - What was the [score](lastScore) in [Tottenham Hotspur](team)'s last game
+    - Who are [Bournemouth](team) [up against](nextOpponent)
+    - Give me [West Ham United](team)'s [next fixture](nextGameDate)
+    - How is [Manchester United](team) [performing](winLossRecord)
+    - Who did [Wolves](team) [play last](lastOpponent)
+    - Show me [Crystal Palace](team)'s [league position](leaguePosition)
+    - What [place](leaguePosition) are [Leeds United](team) currently in
 
 
 - intent: greet
