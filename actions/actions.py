@@ -25,7 +25,7 @@ class ActionGetInfo(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         # entity extraction
-        team = next(tracker.get_latest_entity_values("team"), None)
+        team = next(tracker.get_latest_entity_values("team"), tracker.get_slot("team"))
         last_opponent = next(tracker.get_latest_entity_values("lastOpponent"), None)
         last_score = next(tracker.get_latest_entity_values("lastScore"), None)
         league_pos = next(tracker.get_latest_entity_values("leaguePosition"), None)
@@ -44,12 +44,16 @@ class ActionGetInfo(Action):
             dispatcher.utter_message(response="utter_backtrack")
             return []
         
+        if not team and not any([last_opponent, last_score, league_pos, manager, next_game_date, next_opp, games_played, playing_now, win_loss]):
+            dispatcher.utter_message(response="utter_vague_question")
+            return []
+        
         if not team:
             dispatcher.utter_message(response="utter_missing_team")
             return []
         
         if not any([last_opponent, last_score, league_pos, manager, next_game_date, next_opp, games_played, playing_now, win_loss]):
-            dispatcher.utter_message(response="utter_vague_question")
+            dispatcher.utter_message(response="utter_missing_stat")
             return []
 
 

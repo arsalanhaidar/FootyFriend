@@ -44,6 +44,48 @@ nlu:
     - Are [Everton](team) [playing tomorrow](nextGameDate)
     - Is [Burnley](team) [still playing](nextGameDate) this season
     - When is [Chelsea](team)'s [next game](nextGameDate)
+    - who manages [The Gunners](team)
+    - what was the score for [Gooners](team)
+    - when do [Invincibles](team) play next
+    - what is [The Villans](team)' league position
+    - when do [Villa](team) play next
+    - what was the last game score for [The Cherries](team)
+    - when do [The Bees](team) play next
+    - what was the score for [The Seagulls](team)
+    - when do [Albion](team) play next
+    - what is [The Clarets](team)' league position
+    - what is [The Clarets](team)' league position
+    - what was the last score for [The Blues](team)
+    - when do [Chelski](team) play next
+    - what was the score for [The Toffees](team)
+    - what was the last score for [Badgers](team)
+    - what was the score for [The Whites](team)
+    - when do [The Peacocks](team) play next
+    - what was the score for [The Reds](team)
+    - when do [Kopites](team) play next
+    - what is [Pool](team)'s league position
+    - who manages [Man City](team)
+    - what was the score for [The Citizens](team)
+    - when do [The Sky Blues](team) play next
+    - who manages [Man United](team)
+    - what was the score for [Man U](team)
+    - when do [The Red Devils](team) play next
+    - what was the score for [The Magpies](team)
+    - who manages [Forest](team)
+    - who manages [The Black Cats](team)
+    - who manages [Spurs](team)
+    - what was the score for [Tottenham](team)
+    - when do [The Lilywhites](team) play next
+    - what was the score for [The Hammers](team)
+    - who manages [Wolves](team)
+    - what was their last game
+    - what was the score
+    - when do they play next
+    - who do they play next
+    - what is their league position
+    - how many games have they played
+    - are they playing right now
+
 
 - intent: greet
   examples: |
@@ -117,6 +159,20 @@ nlu:
     - Tottenham Hotspur
     - West Ham United
     - Wolverhampton Wanderers
+    - The Gunners
+    - Gooners
+    - The Villains
+    - Villa
+    - The Blues
+    - The Reds
+    - Man City
+    - The Citizens
+    - Man United
+    - The Red Devils
+    - Spurs
+    - Tottenham
+    - West Ham
+    - Wolves
 
 
 - synonym: Arsenal

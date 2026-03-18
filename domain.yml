@@ -24,6 +24,7 @@ entities:
 slots:
   team:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: team

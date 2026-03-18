@@ -1,6 +1,0 @@
-[
-  {
-    "name": "team",
-    "pattern": "(\\bArsenal\\b|\\bAston\\ Villa\\b|\\bBournemouth\\b|\\bBrentford\\b|\\bBrighton\\ and\\ Hove\\ Albion\\b|\\bBurnley\\b|\\bChelsea\\b|\\bCrystal\\ Palace\\b|\\bEverton\\b|\\bFulham\\b|\\bLeeds\\ United\\b|\\bLiverpool\\b|\\bManchester\\ City\\b|\\bManchester\\ United\\b|\\bNewcastle\\ United\\b|\\bNottingham\\ Forest\\b|\\bSunderland\\b|\\bTottenham\\ Hotspur\\b|\\bWest\\ Ham\\ United\\b|\\bWolverhampton\\ Wanderers\\b)"
-  }
-]
